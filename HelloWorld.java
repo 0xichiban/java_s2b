@@ -15,13 +15,23 @@ public class HelloWorld{
         // 数组变量
         int[] arrayes = new int[20];
         for(byte i=0; i<arrayes.length; i++){
-            System.out.println(arrayes[i]);
+            System.out.print(arrayes[i]);
         }
+        
+        System.out.println(' ');
 
         int[] arrayes2 = new int[22];
         for(byte i=0; i<arrayes2.length; i++){
-            arrayes2[i]
+            arrayes2[i] = i;
+            System.out.print(arrayes2[i]);
         }
 
+        System.out.println(' ');
+        System.arraycopy(arrayes, 0, arrayes2, 3, 10);
+
+        for(byte i=0; i<arrayes2.length; i++){
+            // arrayes2[i] = i;
+            System.out.print(arrayes2[i]);
+        }
     }
 }
